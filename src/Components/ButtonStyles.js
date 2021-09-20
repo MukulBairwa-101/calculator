@@ -1,19 +1,31 @@
-
-import BackspaceIcon from '@material-ui/icons/Backspace';
-const backspaceClr= "#c2281d";
-const functionButtonclr="#0f4f7a";
 const backclr="#f2f2f2"; 
+const calcBackClr="#212121";
+
 const styles ={
     root:{
-        marginLeft:"2rem",
+        marginLeft:"0rem",
+        backgroundColor:calcBackClr,
+        borderRadius:".5rem",
+            
+    },
+    textField:{
+        backgroundColor:"white",
+        color:"blue",
+        margin:"1rem",
+        borderRadius:".5rem",
+
+    },
+    btnGrid:{
+       
+       textAlign:"center",
     },
     equalButton:{
         color:"white",
         backgroundColor:"#2e7299",
     },
     backSpace:{
-        backgroundColor:"white",
-        color:backspaceClr,
+        backgroundColor:"crimson",
+        color:"white",
     },
     numberButton:{
         backgroundColor:"white",
@@ -22,129 +34,13 @@ const styles ={
     funButton:{
         backgroundColor:backclr,
         color:"black",
+    },
+    operatorBtn:{
+        backgroundColor:"#d5e4f0",
+        
     }
 
+
 }
-  const calcButtons =[
-    {
-        id:1,
-        icon:"%",
-        styleClass:styles.funButton,
-    },
-    {
-        id:2,
-        icon:"CE",
-        styleClass:styles.funButton,
-    },
-    {
-        id:3,
-        icon:"C",
-        styleClass:styles.funButton,
-    },
-    {
-        id:4,
-        icon:<BackspaceIcon />,
-        styleClass:styles.backSpace,
-    },
-    {
-        id:5,
-        icon:"1/x",
-        styleClass:styles.funButton,
-    },
-    {
-        id:6,
-        icon:<span>&#8730;</span>,
-        styleClass:styles.funButton,
-    },
-    {
-        id:7,
-        icon:"sqr",
-        styleClass:styles.funButton,
-    },
-    {
-        id:8,
-        icon:<span>&#247;</span>,
-        styleClass:styles.funButton,
-    },
-    {
-        id:9,
-        icon:1,
-        styleClass:styles.numberButton,
-    },
-    {
-        id:10,
-        icon:2,
-        styleClass:styles.numberButton,
-    },
-    {
-        id:11,
-        icon:3,
-        styleClass:styles.numberButton,
-    },
-    {
-        id:12,
-        icon:<span>&#215;</span>,
-        styleClass:styles.funButton,
-    },
-    {
-        id:13,
-        icon:4,
-        styleClass:styles.numberButton,
-    },
-    {
-        id:14,
-        icon:5,
-        styleClass:styles.numberButton,
-    },
-    {
-        id:15,
-        icon:6,
-        styleClass:styles.numberButton,
-    },
-    {
-        id:16,
-        icon:<span>&#8722;</span>,
-        styleClass:styles.funButton,
-    },
-    {
-        id:17,
-        icon:7,
-        styleClass:styles.numberButton,
-    },
-    {
-        id:18,
-        icon:8,
-        styleClass:styles.numberButton,
-    },
-    {
-        id:19,
-        icon:9,
-        styleClass:styles.numberButton,
-    },
-    {
-        id:20,
-        icon:<span>&#43;</span>,
-        styleClass:styles.funButton,
-    },
-    {
-        id:21,
-        icon:"+/-",
-        styleClass:styles.funButton,
-    },
-    {
-        id:22,
-        icon:0,
-        styleClass:styles.numberButton,
-    },
-    {
-        id:23,
-        icon:"." ,
-        styleClass:styles.funButton,
-    },
-    {
-        id:24,
-        icon:"=",
-        styleClass:styles.equalButton,
-    },
-]
-export default calcButtons ;
+
+export {styles} ;

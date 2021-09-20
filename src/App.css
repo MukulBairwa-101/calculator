@@ -1,3 +1,12 @@
-.text-field{
-    max-width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.header{
+    margin:2rem;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color:rgb(83, 83, 83);
+}
+.header span{
+    color:rgb(108, 26, 185);
 }
